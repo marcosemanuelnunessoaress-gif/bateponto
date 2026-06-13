@@ -1,0 +1,29 @@
+[
+  {
+    "userId": "1461471436152766760",
+    "username": "eonothicrlh",
+    "guildId": "1472732440891232258",
+    "startTime": 1781370913295,
+    "endTime": 1781370925659,
+    "durationMs": 12364,
+    "status": "fechado"
+  },
+  {
+    "userId": "1461471436152766760",
+    "username": "eonothicrlh",
+    "guildId": "1472732440891232258",
+    "startTime": 1781371156645,
+    "endTime": 1781371159795,
+    "durationMs": 3150,
+    "status": "fechado"
+  },
+  {
+    "userId": "1461471436152766760",
+    "username": "eonothicrlh",
+    "guildId": "1472732440891232258",
+    "startTime": 1781371287105,
+    "endTime": 1781371291440,
+    "durationMs": 4335,
+    "status": "fechado"
+  }
+]

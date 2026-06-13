@@ -1,0 +1,13 @@
+{
+  "name": "bateponto-rivex",
+  "version": "1.0.0",
+  "description": "Bot Discord Bate-Ponto Rivex usando discord.js v14 e JSON.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.0",
+    "dotenv": "^16.3.1"
+  }
+}
