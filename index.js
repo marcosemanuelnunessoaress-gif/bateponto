@@ -416,9 +416,10 @@ const totalPoints =
     return (
 `${position} • ${item.username}
 
-<:1_:1474075851032105111> Call: ${item.callPoints} pts
-<:1_:1474075862654783732> Mensagens: ${item.messagePoints} pts
-<:dred_infodlx:1474076124731670812> Total: ${item.totalPoints} pts`
+<:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
+<:1_:1474075851032105111> Call: ${item.callPoints}
+<:1_:1474075862654783732> Mensagens: ${item.messagePoints}
+<:dred_infodlx:1474076124731670812> Total: ${item.totalPoints}`
     );
 
 });
@@ -467,9 +468,10 @@ const totalPoints =
     return (
 `${position} • ${item.username}
 
-<:1_:1474075851032105111> Call: ${item.callPoints} pts
-<:1_:1474075862654783732> Mensagens: ${item.messagePoints} pts
-<:dred_infodlx:1474076124731670812> Total: ${item.totalPoints} pts`
+<:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
+<:1_:1474075851032105111> Call: ${item.callPoints}
+<:1_:1474075862654783732> Mensagens: ${item.messagePoints}
+<:dred_infodlx:1474076124731670812> Total: ${item.totalPoints}`
     );
 
 });
@@ -518,9 +520,10 @@ const totalPoints =
     return (
 `${position} • ${item.username}
 
-<:1_:1474075851032105111> Call: ${item.callPoints} pts
-<:1_:1474075862654783732> Mensagens: ${item.messagePoints} pts
-<:dred_infodlx:1474076124731670812> Total: ${item.totalPoints} pts`
+<:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
+<:1_:1474075851032105111> Call: ${item.callPoints}
+<:1_:1474075862654783732> Mensagens: ${item.messagePoints}
+<:dred_infodlx:1474076124731670812> Total: ${item.totalPoints}`
     );
 
 });
