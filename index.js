@@ -417,15 +417,15 @@ const totalPoints =
 `${position} • ${item.username}
 
 <:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
-<:1_:1474075851032105111> Call: ${item.callPoints}
-<:1_:1474075862654783732> Mensagens: ${item.messagePoints}
+<:1_:1474075851032105111> Pontos Call: ${item.callPoints}
+<:1_:1474075862654783732> Pontos Mensagens: ${item.messagePoints}
 <:dred_infodlx:1474076124731670812> Total: ${item.totalPoints}`
     );
 
 });
 
       const embed = buildBaseEmbed()
-    .setTitle('<:1_:1474075867323043872> Ranking de Pontos Rivex')
+    .setTitle('<a:trofeu_topdesigner:1515499976535445514> Ranking de Pontos Rivex')
         .setDescription(lines.join('\n'))
         .setFooter({ text: `Página ${page + 1}/${totalPages} • ${fullRanking.length} pessoas` });
 
@@ -469,15 +469,15 @@ const totalPoints =
 `${position} • ${item.username}
 
 <:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
-<:1_:1474075851032105111> Call: ${item.callPoints}
-<:1_:1474075862654783732> Mensagens: ${item.messagePoints}
+<:1_:1474075851032105111> Pontos Call: ${item.callPoints}
+<:1_:1474075862654783732> Pontos Mensagens: ${item.messagePoints}
 <:dred_infodlx:1474076124731670812> Total: ${item.totalPoints}`
     );
 
 });
 
       const embed = buildBaseEmbed()
-   .setTitle('<:1_:1474075867323043872> Ranking de Pontos Rivex')
+   .setTitle('<a:trofeu_topdesigner:1515499976535445514> Ranking de Pontos Rivex')
         .setDescription(lines.join('\n'))
         .setFooter({ text: `Página ${page + 1}/${totalPages} • ${fullRanking.length} pessoas` });
 
@@ -521,15 +521,15 @@ const totalPoints =
 `${position} • ${item.username}
 
 <:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
-<:1_:1474075851032105111> Call: ${item.callPoints}
-<:1_:1474075862654783732> Mensagens: ${item.messagePoints}
+<:1_:1474075851032105111> Pontos Call: ${item.callPoints}
+<:1_:1474075862654783732> Pontos Mensagens: ${item.messagePoints}
 <:dred_infodlx:1474076124731670812> Total: ${item.totalPoints}`
     );
 
 });
 
       const embed = buildBaseEmbed()
-        .setTitle('<:1_:1474075867323043872> Ranking de Pontos Rivex')
+        .setTitle('<a:trofeu_topdesigner:1515499976535445514> Ranking de Pontos Rivex')
         .setDescription(lines.join('\n'))
         .setFooter({ text: `Página ${page + 1}/${totalPages} • ${fullRanking.length} pessoas` });
 
