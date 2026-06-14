@@ -223,6 +223,81 @@ client.on(Events.MessageCreate, async (message) => {
         return message.reply({ content: '❌ Apenas administradores podem usar este comando.' });
       }
 
+      if (content.startsWith('rx!set')) {
+  if (!isAdmin(member)) {
+    return message.reply({ content: '❌ Apenas administradores podem usar este comando.' });
+  }
+
+  const args = message.content.trim().split(/\s+/);
+  const tipo = args[1];
+  const user = message.mentions.users.first();
+  const quantidade = args[3];
+
+  if (!tipo || !user || !quantidade) {
+    return message.reply('❌ Use: `rx!set horas @usuario 5h30m` ou `rx!set mensagens @usuario 250`');
+  }
+
+  if (tipo === 'horas') {
+    const match = quantidade.match(/(?:(\d+)h)?(?:(\d+)m)?/i);
+
+    if (!match || (!match[1] && !match[2])) {
+      return message.reply('❌ Use um formato válido. Exemplo: `5h30m`, `2h` ou `45m`');
+    }
+
+    const horas = parseInt(match[1] || '0');
+    const minutos = parseInt(match[2] || '0');
+
+    const durationMs = ((horas * 60) + minutos) * 60 * 1000;
+
+    const data = await readData();
+
+    data.push({
+      userId: user.id,
+      username: user.tag,
+      guildId: message.guild.id,
+      startTime: 0,
+      endTime: durationMs,
+      durationMs,
+      status: 'fechado'
+    });
+
+    await writeData(data);
+
+    const batePontos = Math.floor(durationMs / (30 * 60 * 1000));
+    const callPoints = Math.floor(batePontos / 2) * 5;
+
+    return message.reply(
+      `✅ Horas adicionadas para ${user}.\n` +
+      `⏱️ Tempo: ${formatDuration(durationMs)}\n` +
+      `📞 Pontos de call: ${callPoints}`
+    );
+  }
+
+  if (tipo === 'mensagens') {
+    const quantidadeMsg = parseInt(quantidade);
+
+    if (isNaN(quantidadeMsg) || quantidadeMsg < 0) {
+      return message.reply('❌ Coloque uma quantidade válida de mensagens.');
+    }
+
+    const counts = await readMessageCounts();
+
+    counts[user.id] = quantidadeMsg;
+
+    await writeMessageCounts(counts);
+
+    const messagePoints = Math.floor(quantidadeMsg / 10) * 5;
+
+    return message.reply(
+      `✅ Mensagens setadas para ${user}.\n` +
+      `💬 Mensagens: ${quantidadeMsg}\n` +
+      `⭐ Pontos de mensagens: ${messagePoints}`
+    );
+  }
+
+  return message.reply('❌ Tipo inválido. Use `horas` ou `mensagens`.');
+}
+
       const painelMessage = await message.channel.send({
   content: "Clique em **Iniciar** para começar seu bate-ponto.",
   components: [buildActionRow()]
