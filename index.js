@@ -306,7 +306,7 @@ if (message.content.toLowerCase().startsWith('rx!set ')) {
   return message.reply('❌ Tipo inválido. Use `horas` ou `mensagens`.');
 }
 
-    if (content === 'rx!resetbateponto') {
+    if (content === 'rv!resetbateponto') {
       if (!isAdmin(member)) {
         return message.reply({ content: '❌ Apenas administradores podem usar este comando.' });
       }
