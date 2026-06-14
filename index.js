@@ -375,9 +375,11 @@ const totalPoints =
 
     const messages = messageCounts[id] || 0;
 
-    const callPoints = Math.floor(
-        value.durationMs / (30 * 60 * 1000)
-    );
+    const batePontos = Math.floor(
+    value.durationMs / (30 * 60 * 1000)
+);
+
+const callPoints = Math.floor(batePontos / 2) * 5;
 
     const messagePoints = Math.floor(
         messages / 10
@@ -398,7 +400,7 @@ const totalPoints =
 .sort((a, b) => b.totalPoints - a.totalPoints);
 
       const page = 0;
-      const itemsPerPage = 10;
+      const itemsPerPage = 5;
       const totalPages = Math.ceil(fullRanking.length / itemsPerPage);
       const startIdx = page * itemsPerPage;
       const ranking = fullRanking.slice(startIdx, startIdx + itemsPerPage);
@@ -414,7 +416,7 @@ const totalPoints =
         `${globalPosition}º`;
 
     return (
-`${position} • ${item.username}
+`${position} - <@${item.userId}>
 
 <:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
 <:1_:1474075851032105111> Pontos Call: ${item.callPoints}
@@ -450,7 +452,7 @@ const totalPoints =
         .sort((a, b) => b.durationMs - a.durationMs);
 
       const page = currentPage + 1;
-      const itemsPerPage = 10;
+      const itemsPerPage = 5;
       const totalPages = Math.ceil(fullRanking.length / itemsPerPage);
       const startIdx = page * itemsPerPage;
       const ranking = fullRanking.slice(startIdx, startIdx + itemsPerPage);
@@ -466,7 +468,7 @@ const totalPoints =
         `${globalPosition}º`;
 
     return (
-`${position} • ${item.username}
+`${position} - <@${item.userId}>
 
 <:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
 <:1_:1474075851032105111> Pontos Call: ${item.callPoints}
@@ -502,7 +504,7 @@ const totalPoints =
         .sort((a, b) => b.durationMs - a.durationMs);
 
       const page = currentPage - 1;
-      const itemsPerPage = 10;
+      const itemsPerPage = 5;
       const totalPages = Math.ceil(fullRanking.length / itemsPerPage);
       const startIdx = page * itemsPerPage;
       const ranking = fullRanking.slice(startIdx, startIdx + itemsPerPage);
@@ -518,7 +520,7 @@ const totalPoints =
         `${globalPosition}º`;
 
     return (
-`${position} • ${item.username}
+`${position} - <@${item.userId}>
 
 <:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
 <:1_:1474075851032105111> Pontos Call: ${item.callPoints}
