@@ -223,9 +223,21 @@ client.on(Events.MessageCreate, async (message) => {
         return message.reply({ content: '❌ Apenas administradores podem usar este comando.' });
       }
 
-      return  message.channel.send({
+      const painelMessage = await message.channel.send({
+  content: "Clique em **Iniciar** para começar seu bate-ponto.",
   components: [buildActionRow()]
 });
+
+try {
+  await painelMessage.startThread({
+    name: "📌・Como usar o bate-ponto",
+    autoArchiveDuration: 1440
+  });
+} catch (err) {
+  console.log("Erro ao criar tópico:", err);
+}
+
+return;
     }
 
     if (content === 'rx!resetbateponto') {
@@ -448,8 +460,31 @@ const callPoints = Math.floor(batePontos / 2) * 5;
       }, new Map());
 
       const fullRanking = Array.from(totals.entries())
-        .map(([id, value]) => ({ userId: id, username: value.username, durationMs: value.durationMs, messages: messageCounts[id] || 0 }))
-        .sort((a, b) => b.durationMs - a.durationMs);
+.map(([id, value]) => {
+
+    const messages = messageCounts[id] || 0;
+
+    const batePontos = Math.floor(
+        value.durationMs / (30 * 60 * 1000)
+    );
+
+    const callPoints = Math.floor(batePontos / 2) * 5;
+
+    const messagePoints = Math.floor(messages / 10) * 5;
+
+    const totalPoints = callPoints + messagePoints;
+
+    return {
+        userId: id,
+        username: value.username,
+        durationMs: value.durationMs,
+        messages,
+        callPoints,
+        messagePoints,
+        totalPoints
+    };
+})
+.sort((a, b) => b.totalPoints - a.totalPoints);
 
       const page = currentPage + 1;
       const itemsPerPage = 5;
@@ -500,8 +535,31 @@ const callPoints = Math.floor(batePontos / 2) * 5;
       }, new Map());
 
       const fullRanking = Array.from(totals.entries())
-        .map(([id, value]) => ({ userId: id, username: value.username, durationMs: value.durationMs, messages: messageCounts[id] || 0 }))
-        .sort((a, b) => b.durationMs - a.durationMs);
+.map(([id, value]) => {
+
+    const messages = messageCounts[id] || 0;
+
+    const batePontos = Math.floor(
+        value.durationMs / (30 * 60 * 1000)
+    );
+
+    const callPoints = Math.floor(batePontos / 2) * 5;
+
+    const messagePoints = Math.floor(messages / 10) * 5;
+
+    const totalPoints = callPoints + messagePoints;
+
+    return {
+        userId: id,
+        username: value.username,
+        durationMs: value.durationMs,
+        messages,
+        callPoints,
+        messagePoints,
+        totalPoints
+    };
+})
+.sort((a, b) => b.totalPoints - a.totalPoints);
 
       const page = currentPage - 1;
       const itemsPerPage = 5;
