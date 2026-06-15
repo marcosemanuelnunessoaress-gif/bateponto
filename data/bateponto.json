@@ -1,0 +1,173 @@
+[
+  {
+    "userId": "1451336768774213732",
+    "username": "y4zbgk",
+    "guildId": "1472732440891232258",
+    "startTime": 0,
+    "endTime": 3600000,
+    "durationMs": 3600000,
+    "status": "fechado"
+  },
+  {
+    "userId": "1451336768774213732",
+    "username": "y4zbgk",
+    "guildId": "1472732440891232258",
+    "startTime": 0,
+    "endTime": 660000,
+    "durationMs": 660000,
+    "status": "fechado"
+  },
+  {
+    "userId": "1451336768774213732",
+    "username": "y4zbgk",
+    "guildId": "1472732440891232258",
+    "startTime": 1781443942683,
+    "endTime": 1781454378550,
+    "durationMs": 10435867,
+    "status": "fechado"
+  },
+  {
+    "userId": "1234881308291895367",
+    "username": "isayy8086",
+    "guildId": "1472732440891232258",
+    "startTime": 0,
+    "endTime": 2160000,
+    "durationMs": 2160000,
+    "status": "fechado"
+  },
+  {
+    "userId": "1498707499522461990",
+    "username": "souptaka",
+    "guildId": "1472732440891232258",
+    "startTime": 1781444123560,
+    "endTime": 1781487967347,
+    "durationMs": 43843787,
+    "status": "fechado"
+  },
+  {
+    "userId": "1482411300611952742",
+    "username": "meoki",
+    "guildId": "1472732440891232258",
+    "startTime": 1781446251833,
+    "endTime": 1781447336847,
+    "durationMs": 1085014,
+    "status": "fechado"
+  },
+  {
+    "userId": "1470588336270872606",
+    "username": "mariaxzzz",
+    "guildId": "1472732440891232258",
+    "startTime": 1781447369739,
+    "endTime": 1781471024711,
+    "durationMs": 23654972,
+    "status": "fechado"
+  },
+  {
+    "userId": "1466640897901989921",
+    "username": "zxn1ne",
+    "guildId": "1472732440891232258",
+    "startTime": 1781447622913,
+    "endTime": 1781456016405,
+    "durationMs": 8393492,
+    "status": "fechado"
+  },
+  {
+    "userId": "1234881308291895367",
+    "username": "isayy8086",
+    "guildId": "1472732440891232258",
+    "startTime": 1781455148401,
+    "endTime": null,
+    "durationMs": 0,
+    "status": "aberto"
+  },
+  {
+    "userId": "1502752434139693348",
+    "username": "sopadletrinhas",
+    "guildId": "1472732440891232258",
+    "startTime": 1781464722331,
+    "endTime": 1781468265798,
+    "durationMs": 3543467,
+    "status": "fechado"
+  },
+  {
+    "userId": "1389793047646175334",
+    "username": "pitayacore",
+    "guildId": "1472732440891232258",
+    "startTime": 1781470815897,
+    "endTime": 1781481910513,
+    "durationMs": 11094616,
+    "status": "fechado"
+  },
+  {
+    "userId": "1161767407921152131",
+    "username": "_7arthur7",
+    "guildId": "1472732440891232258",
+    "startTime": 1781480791157,
+    "endTime": 1781486429277,
+    "durationMs": 5638120,
+    "status": "fechado"
+  },
+  {
+    "userId": "1466640897901989921",
+    "username": "zxn1ne",
+    "guildId": "1472732440891232258",
+    "startTime": 1781481613769,
+    "endTime": 1781493233151,
+    "durationMs": 11619382,
+    "status": "fechado"
+  },
+  {
+    "userId": "1470588336270872606",
+    "username": "mariaxzzz",
+    "guildId": "1472732440891232258",
+    "startTime": 1781482551906,
+    "endTime": 1781484792662,
+    "durationMs": 2240756,
+    "status": "fechado"
+  },
+  {
+    "userId": "1466640897901989921",
+    "username": "zxn1ne",
+    "guildId": "1472732440891232258",
+    "startTime": 1781493317200,
+    "endTime": 1781493427910,
+    "durationMs": 110710,
+    "status": "fechado"
+  },
+  {
+    "userId": "1161767407921152131",
+    "username": "_7arthur7",
+    "guildId": "1472732440891232258",
+    "startTime": 1781498387688,
+    "endTime": 1781511240466,
+    "durationMs": 12852778,
+    "status": "fechado"
+  },
+  {
+    "userId": "1466640897901989921",
+    "username": "zxn1ne",
+    "guildId": "1472732440891232258",
+    "startTime": 1781529269512,
+    "endTime": null,
+    "durationMs": 0,
+    "status": "aberto"
+  },
+  {
+    "userId": "1482411300611952742",
+    "username": "meoki",
+    "guildId": "1472732440891232258",
+    "startTime": 1781530397995,
+    "endTime": 1781535863769,
+    "durationMs": 5465774,
+    "status": "fechado"
+  },
+  {
+    "userId": "1451336768774213732",
+    "username": "y4zbgk",
+    "guildId": "1472732440891232258",
+    "startTime": 1781532091230,
+    "endTime": 1781536731046,
+    "durationMs": 4639816,
+    "status": "fechado"
+  }
+]
