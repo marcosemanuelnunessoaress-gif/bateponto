@@ -281,8 +281,7 @@ if (message.content.toLowerCase().startsWith('rx!set ')) {
 
     await writeData(data);
 
-    const batePontos = Math.floor(durationMs / (30 * 60 * 1000));
-    const callPoints = Math.floor(batePontos / 2) * 5;
+   const callPoints = Math.floor(durationMs / (30 * 60 * 1000));
 
     return message.reply(`✅ Horas setadas para ${user}: ${formatDuration(durationMs)} | ${callPoints} pts`);
   }
@@ -453,11 +452,7 @@ const totalPoints =
 
     const messages = messageCounts[id] || 0;
 
-    const batePontos = Math.floor(
-    value.durationMs / (30 * 60 * 1000)
-);
-
-const callPoints = Math.floor(batePontos / 2) * 5;
+    const callPoints = Math.floor(value.durationMs / (30 * 60 * 1000));
 
     const messagePoints = Math.floor(
         messages / 10
@@ -496,11 +491,10 @@ const callPoints = Math.floor(batePontos / 2) * 5;
     return (
 `${position} - <@${item.userId}>
 
-<:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
-<:1_:1474075851032105111> Pontos Call: ${item.callPoints}
-<:1_:1474075862654783732> Pontos Mensagens: ${item.messagePoints}
-<:dred_infodlx:1474076124731670812> Total: ${item.totalPoints}`
-    );
+<:ticketsrivex:1485344295341789205> Tempo em call: ${formatDuration(item.durationMs)} | ${item.callPoints} pontos
+<:1_:1474075862654783732> Mensagens: ${item.messages} msg | ${item.messagePoints} pontos
+<:dred_infodlx:1474076124731670812> Total de pontos: ${item.totalPoints} pontos`
+);
 
 });
 
@@ -530,11 +524,7 @@ const callPoints = Math.floor(batePontos / 2) * 5;
 
     const messages = messageCounts[id] || 0;
 
-    const batePontos = Math.floor(
-        value.durationMs / (30 * 60 * 1000)
-    );
-
-    const callPoints = Math.floor(batePontos / 2) * 5;
+    const callPoints = Math.floor(value.durationMs / (30 * 60 * 1000));
 
     const messagePoints = Math.floor(messages / 10) * 5;
 
@@ -571,11 +561,10 @@ const callPoints = Math.floor(batePontos / 2) * 5;
     return (
 `${position} - <@${item.userId}>
 
-<:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
-<:1_:1474075851032105111> Pontos Call: ${item.callPoints}
-<:1_:1474075862654783732> Pontos Mensagens: ${item.messagePoints}
-<:dred_infodlx:1474076124731670812> Total: ${item.totalPoints}`
-    );
+<:ticketsrivex:1485344295341789205> Tempo em call: ${formatDuration(item.durationMs)} | ${item.callPoints} pontos
+<:1_:1474075862654783732> Mensagens: ${item.messages} msg | ${item.messagePoints} pontos
+<:dred_infodlx:1474076124731670812> Total de pontos: ${item.totalPoints} pontos`
+);
 
 });
 
@@ -605,11 +594,7 @@ const callPoints = Math.floor(batePontos / 2) * 5;
 
     const messages = messageCounts[id] || 0;
 
-    const batePontos = Math.floor(
-        value.durationMs / (30 * 60 * 1000)
-    );
-
-    const callPoints = Math.floor(batePontos / 2) * 5;
+    const callPoints = Math.floor(value.durationMs / (30 * 60 * 1000));
 
     const messagePoints = Math.floor(messages / 10) * 5;
 
@@ -646,11 +631,10 @@ const callPoints = Math.floor(batePontos / 2) * 5;
     return (
 `${position} - <@${item.userId}>
 
-<:ticketsrivex:1485344295341789205>Tempo em Call: ${formatDuration(item.durationMs)}
-<:1_:1474075851032105111> Pontos Call: ${item.callPoints}
-<:1_:1474075862654783732> Pontos Mensagens: ${item.messagePoints}
-<:dred_infodlx:1474076124731670812> Total: ${item.totalPoints}`
-    );
+<:ticketsrivex:1485344295341789205> Tempo em call: ${formatDuration(item.durationMs)} | ${item.callPoints} pontos
+<:1_:1474075862654783732> Mensagens: ${item.messages} msg | ${item.messagePoints} pontos
+<:dred_infodlx:1474076124731670812> Total de pontos: ${item.totalPoints} pontos`
+);
 
 });
 
